@@ -1,0 +1,615 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+.s-line{
+    margin: auto;
+    width: 10%;
+    height: 2px;
+    background-color: #FF305B;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.b-line{
+    margin: auto;
+    width: 20%;
+    height: 2px;
+    background-color: #FF305B;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+.home {
+    background-image: url(../images/hero\ img.jpg);
+    background-size: cover;
+    height: 99vh;
+    position: relative;
+}
+
+.home .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.home .caption {
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .caption h1 {
+    color: #ff305b;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.home .caption span {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.home .caption p {
+    font-size: 24px;
+    transition: all 1s 2s ease-in;
+
+}
+
+.home .caption p:hover {
+    width: 60%;
+    /* la msh 3arfa*/
+}
+
+/*end home section*/
+
+
+
+/*navbar*/
+
+.navbar {
+    background-color: transparent;
+    /* azay tkon gray w hya nazla , azay as8r 7gmha*/
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 22;
+}
+
+.navbar .logo {
+    width: 30%;
+    float: left;
+}
+
+.navbar .logo h2 {
+    color: #ff305b;
+}
+
+.navbar .navs {
+    width: 70%;
+    float: left;
+}
+
+.navbar .navs ul {
+    float: right;
+    /*overflow: hidden;*/
+}
+
+.navbar .navs ul li {
+    float: left;
+    margin: 17px;
+}
+
+.navbar .navs ul li a {
+    color: #fff;
+
+}
+
+.navbar .navs ul li a:hover {
+    color: #ff305b;
+}
+
+
+/*navbar end*/
+
+
+/*about section*/
+
+.about {
+    overflow: hidden;
+}
+
+.about .profile_p {
+    width: 40%;
+    float: left;
+    padding: 50px;
+}
+
+.about .profile_p .about_photo {
+    position: relative;
+}
+
+.about .profile_p .about_photo img {
+    width: 100%;
+}
+
+.photo_overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.about_photo:hover .photo_overlay {
+    top: 0;
+    opacity: 1;
+}
+
+.about .text_p {
+    width: 60%;
+    float: left;
+    padding: 50px;
+}
+
+.about .text_p .about_text button {
+    border: none;
+    padding: 10px;
+    background-color: #FF305B;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+.about .text_p .about_text button a {
+    color: #F1F1F1;
+    text-decoration: none;
+}
+
+
+.about .text_p .about_text p {
+    color: #555555;
+    padding-bottom: 5%;
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 15px;
+}
+
+.about .text_p .about_text h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 25px;
+    padding-left: 13px;
+
+}
+.about .text_p .about_text h2 span{
+    color: #ff305b;
+}
+
+.about .text_p .about_text ul li {
+    margin: 10px;
+}
+
+.about .text_p .about_text ul li {
+    color: #555555;
+}
+
+.about .text_p .about_text ul li span {
+    color: #333333;
+    font-weight: 500;
+}
+
+.about .profile_p .about_photo .photo_overlay .icon .fa-brands {
+    color: #fff;
+}
+
+.fa-brands:hover {
+    color: #FF305B;
+}
+
+.about .profile_p .about_photo .photo_overlay .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.about .profile_p .about_photo .photo_overlay .icon ul li {
+    display: inline;
+    margin: 0 9px;
+}
+
+.about .profile_p .about_photo .photo_overlay .icon ul li:hover a i {
+    color: #FF305B;
+}
+
+
+
+/* our service section*/
+
+
+.ourservice {
+    background-color: #F1F1F1;
+}
+
+.ourservice h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    /*position: relative;*/
+}
+
+.ourservice .service {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 50px;
+    transition: box-shadow 0.4s;
+}
+
+.ourservice .service:hover {
+    box-shadow: 0px 10px 20px 5px rgb(0 0 0 / 15%);
+    background-color: white;
+}
+
+.service-icons {
+    font-size: 2rem;
+    color: #ff305b;
+    margin-bottom: 15px;
+}
+
+/*portfolio section*/
+.OurPortfolio {
+    overflow: hidden;
+}
+
+.OurPortfolio h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.OurPortfolio .newbar .list ul {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.OurPortfolio .newbar .list ul li {
+    display: inline;
+    margin: 0 1.5%;
+}
+
+.OurPortfolio .newbar .list ul li a {
+    color: black;
+}
+
+.OurPortfolio .newbar .list ul li:hover a {
+    color: #FF305B;
+}
+
+.OurPortfolio .pics {
+    width: 33.333%;
+    float: left;
+    padding: 20px;
+
+}
+
+.OurPortfolio .pics img {
+    width: 100%;
+}
+
+
+
+
+/* numbers*/
+.numbers {
+    background-color: #F1F1F1;
+    padding: 30px 5px;
+}
+
+.numbers .item {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.numbers .item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+
+}
+
+.numbers .item p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.numbers-icons {
+    font-size: 2rem;
+    color: #ff305b;
+    margin-bottom: 15px;
+}
+
+/* end numbers*/
+
+/*feedback*/
+.feedback .feedback-card .red-triangle {
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    transform: rotate(45deg);
+    width: 300px;
+    height: 300px;
+    background-color: #FF305B;
+}
+
+.feedback-card {
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    padding: 5%;
+    margin: 5% 15%;
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.feedback .feedback-card .alex_photo {
+    float: left;
+    z-index: 2;
+    position: relative;
+    margin-right: 5%;
+}
+
+.feedback .feedback-card .alex_photo img {
+    border-radius: 50%;
+}
+
+/*end feedback*/
+
+/*blog*/
+.blog {
+    background-color: #F1F1F1;
+    padding: 70px 5px;
+   
+}
+
+.blog h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+.blog .item {
+    width: 33.333%;
+    float: left;
+    padding: 15px;
+    /* so2al background color - padding div f div*/
+
+}
+
+.blog .item0 {
+    background-color: #fff;
+   
+}
+
+.blog .item img {
+    width: 100%;
+}
+
+.blog .item p {
+    color: #555555;
+    margin: 7px 0 10px;
+
+}
+
+.blog .item h3 a {
+    color: black;
+    margin: 5px 0px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.blog .item h3 a:hover {
+    color: #FF305B;
+}
+
+.blog .item p span a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog .item p span a:hover {
+    color: #FF305B;
+}
+
+
+
+
+/* contact us*/
+.contact h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.contact form {
+    width: 65%;
+    margin: auto;
+}
+
+.contact form input,
+.contact form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: box-shadow 0.2s;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: #999999;
+}
+
+.contact form input:focus-visible,
+.contact form textarea:focus-visible {
+    border-color: #FF305B;
+    outline: #FF305B;
+}
+
+.contact form textarea {
+    height: 100px;
+}
+
+.contact form input:hover {
+    box-shadow: 0px 2px 70px 6px rgba(91, 46, 46, 0);
+}
+
+.contact form button {
+    border: none;
+    padding: 7px;
+    background-color: #FF305B;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/*  container*/
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 40px;
+}
+
+/*last*/
+.last {
+    background-color: #333333;
+    color: #F1F1F1;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.last .container .icon  {
+    text-align: center;
+}
+
+.last .container .icon p span a {
+    color: #ff305b;
+}
+
+
+.last .container .icon li a {
+    color: #fff;
+}
+
+.last .container .icon li a:hover {
+    color: #FF305B;
+}
+
+.last .container .icon {
+    font-size: 1rem;
+    margin: 2px 60px;
+}
+
+.last .container .icon ul li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+/* msh 3arfa agebha f nos */
+/*/*/
+*
+/*/*/
+*
+/*/*/
+
+
+/*.ccc{
+    padding: 20px;
+    margin: 10px;
+    width: 20%;
+    background-color: #ccc;
+}
+
+.my{
+    border: 7px solid #333333;
+    border-radius:2%;
+    position: relative;
+    height: 45%;
+}
+.my .my-img img{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.my .my-img img:hover .mu-layer{
+    top: 10px;
+    background-color: #FF305B;
+}
+.mu-layer{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+.my .my-img img{
+    width: 100%;
+
+}*/
